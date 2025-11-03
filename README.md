@@ -32,7 +32,7 @@ API Rest para gerenciar cursos, alunos e matrículas, simulando um sistema de en
 - Tabelas com nomes em português
 
 ## Documentação
-- Swagger disponível em [`/docs`](http://localhost:3000/docs)
+- Swagger disponível em http://localhost:3000/docs [`/docs`](http://localhost:3000/docs)
 
 ## Endpoints Principais
 
