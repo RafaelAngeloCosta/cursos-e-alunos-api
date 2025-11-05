@@ -1,2 +1,4 @@
 node_modules/
 REGRAS.md
+mochawesome-report/
+.env
