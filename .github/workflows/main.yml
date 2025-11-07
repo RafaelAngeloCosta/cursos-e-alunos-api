@@ -1,0 +1,34 @@
+name: PPP - Projeto de Portifolio Pessoal - Gerenciamento de Cursos e Alunos - API
+
+#gatilhos
+on:
+  workflow_dispatch:
+
+jobs: 
+  tests: 
+
+  # [config do so] (windows/linux/mac, chrome/firefox/edge, ...)
+    runs-on: ubuntu-latest
+
+  # [variaveis] (variáveis de ambiente, chaves de acesso a plataformas, etc.)
+    env:
+      API_BASE_URL: 'http://localhost:3000'
+      PORT: 3000
+    
+  # [ações ou passos]
+    steps: 
+     - name: Checkout do Repositório
+       uses: actions/checkout@v4
+
+     - name: Instalando as dependências
+       run: npm install              
+   
+     - name: Iniciar o servidor de aplicação
+       run: npm start &
+               
+     - name: Executar os testes da API
+       run: npm test        
+
+        
+    
+  
